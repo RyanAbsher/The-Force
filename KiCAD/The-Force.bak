@@ -1,0 +1,260 @@
+EESchema Schematic File Version 4
+LIBS:Arduino_DMX_RS232-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 1550 1250 0    197  ~ 0
+DMX
+Text Notes 3100 1250 0    197  ~ 0
+RS-232
+Text Notes 4900 1250 0    197  ~ 0
+ARDUINO
+$Sheet
+S 1100 1400 1500 1500
+U 5F2FB522
+F0 "DMX" 50
+F1 "DMX.sch" 50
+$EndSheet
+$Sheet
+S 2950 1400 1500 1500
+U 5F3088EC
+F0 "RS-232" 50
+F1 "RS-232.sch" 50
+$EndSheet
+$Sheet
+S 4800 1400 1500 1500
+U 5F30A5F2
+F0 "MCU" 50
+F1 "MCU.sch" 50
+$EndSheet
+$Comp
+L Connector:Conn_01x03_Male J2
+U 1 1 5F30E18A
+P 9500 1850
+F 0 "J2" H 9472 1780 50  0000 R CNN
+F 1 "+5v In" H 9472 1871 50  0000 R CNN
+F 2 "Terminal:Terminal" H 9500 1850 50  0001 C CNN
+F 3 "~" H 9500 1850 50  0001 C CNN
+	1    9500 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5F30E2B6
+P 9150 2100
+F 0 "#PWR0101" H 9150 1850 50  0001 C CNN
+F 1 "GND" H 9155 1927 50  0000 C CNN
+F 2 "" H 9150 2100 50  0001 C CNN
+F 3 "" H 9150 2100 50  0001 C CNN
+	1    9150 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5F30E2F5
+P 9150 1600
+F 0 "#PWR0102" H 9150 1450 50  0001 C CNN
+F 1 "+5V" H 9165 1773 50  0000 C CNN
+F 2 "" H 9150 1600 50  0001 C CNN
+F 3 "" H 9150 1600 50  0001 C CNN
+	1    9150 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 1600 9150 1750
+Wire Wire Line
+	9150 1750 9300 1750
+Wire Wire Line
+	9150 1950 9300 1950
+Wire Wire Line
+	9150 1950 9150 2100
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 5F30E80F
+P 8100 1750
+F 0 "J1" H 8073 1773 50  0000 R CNN
+F 1 "Start Button" H 8073 1682 50  0000 R CNN
+F 2 "Terminal:Terminal" H 8100 1750 50  0001 C CNN
+F 3 "~" H 8100 1750 50  0001 C CNN
+	1    8100 1750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 5F30E947
+P 5350 6800
+F 0 "#PWR0103" H 5350 6650 50  0001 C CNN
+F 1 "+5V" H 5365 6973 50  0000 C CNN
+F 2 "" H 5350 6800 50  0001 C CNN
+F 3 "" H 5350 6800 50  0001 C CNN
+	1    5350 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 6800 5350 6950
+Wire Wire Line
+	5350 6950 5150 6950
+$Comp
+L power:GND #PWR0104
+U 1 1 5F30EA27
+P 5350 7150
+F 0 "#PWR0104" H 5350 6900 50  0001 C CNN
+F 1 "GND" H 5355 6977 50  0000 C CNN
+F 2 "" H 5350 7150 50  0001 C CNN
+F 3 "" H 5350 7150 50  0001 C CNN
+	1    5350 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 7150 5350 7050
+Wire Wire Line
+	5350 7050 5150 7050
+Text Label 5150 6950 2    50   ~ 0
+5V
+Text Label 5150 7050 2    50   ~ 0
+GND
+Text Label 2900 5550 0    50   ~ 0
+5V
+Text Label 2900 5650 0    50   ~ 0
+5V
+Text Label 2900 5750 0    50   ~ 0
+GND
+Wire Wire Line
+	3200 6050 2900 6050
+Wire Wire Line
+	3200 5950 2900 5950
+Wire Wire Line
+	3200 5850 2900 5850
+Text Notes 6900 950  0    197  ~ 0
+Off-Board Connections
+Wire Notes Line
+	6300 6750 6300 4100
+Wire Notes Line
+	6300 4100 500  4100
+Text Notes 1650 4450 0    197  ~ 0
+Raspberry Pi Headers
+Wire Notes Line
+	6700 3350 6700 500 
+Wire Notes Line
+	6700 3350 10500 3350
+Wire Wire Line
+	7800 1650 7900 1650
+Text Label 7800 1650 2    50   ~ 0
+START_BUTTON
+Wire Wire Line
+	7800 1850 7900 1850
+Text GLabel 3200 5850 2    50   Input ~ 0
+SHOW_SIGNAL_1
+Text GLabel 3200 5950 2    50   Input ~ 0
+SHOW_SIGNAL_2
+Text GLabel 3200 6050 2    50   Input ~ 0
+SHOW_SIGNAL_3
+$Comp
+L Connector:Conn_01x09_Female J5
+U 1 1 5F31981E
+P 2700 5950
+F 0 "J5" H 2600 6600 50  0000 C CNN
+F 1 "RPi Center" H 2600 6500 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 2700 5950 50  0001 C CNN
+F 3 "~" H 2700 5950 50  0001 C CNN
+	1    2700 5950
+	-1   0    0    -1  
+$EndComp
+Text Label 2900 6350 0    50   ~ 0
+GND
+Text Label 3200 6250 0    50   ~ 0
+START_BUTTON
+Wire Wire Line
+	3200 6250 2900 6250
+Text Label 1400 5550 0    50   ~ 0
+5V
+Text Label 1400 5650 0    50   ~ 0
+5V
+Text Label 1400 5750 0    50   ~ 0
+GND
+Wire Wire Line
+	1700 6050 1400 6050
+Wire Wire Line
+	1700 5950 1400 5950
+Wire Wire Line
+	1700 5850 1400 5850
+Text GLabel 1700 5850 2    50   Input ~ 0
+SHOW_SIGNAL_1
+Text GLabel 1700 5950 2    50   Input ~ 0
+SHOW_SIGNAL_2
+Text GLabel 1700 6050 2    50   Input ~ 0
+SHOW_SIGNAL_3
+$Comp
+L Connector:Conn_01x09_Female J6
+U 1 1 5F31BA0C
+P 1200 5950
+F 0 "J6" H 1100 6600 50  0000 C CNN
+F 1 "RPi Left" H 1100 6500 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 1200 5950 50  0001 C CNN
+F 3 "~" H 1200 5950 50  0001 C CNN
+	1    1200 5950
+	-1   0    0    -1  
+$EndComp
+Text Label 1400 6350 0    50   ~ 0
+GND
+NoConn ~ 2900 6150
+NoConn ~ 1400 6150
+NoConn ~ 1400 6250
+Text Label 4400 5550 0    50   ~ 0
+5V
+Text Label 4400 5650 0    50   ~ 0
+5V
+Text Label 4400 5750 0    50   ~ 0
+GND
+Wire Wire Line
+	4700 6050 4400 6050
+Wire Wire Line
+	4700 5950 4400 5950
+Wire Wire Line
+	4700 5850 4400 5850
+Text GLabel 4700 5850 2    50   Input ~ 0
+SHOW_SIGNAL_1
+Text GLabel 4700 5950 2    50   Input ~ 0
+SHOW_SIGNAL_2
+Text GLabel 4700 6050 2    50   Input ~ 0
+SHOW_SIGNAL_3
+$Comp
+L Connector:Conn_01x09_Female J7
+U 1 1 5F31CB1B
+P 4200 5950
+F 0 "J7" H 4100 6600 50  0000 C CNN
+F 1 "RPi Right" H 4100 6500 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 4200 5950 50  0001 C CNN
+F 3 "~" H 4200 5950 50  0001 C CNN
+	1    4200 5950
+	-1   0    0    -1  
+$EndComp
+Text Label 4400 6350 0    50   ~ 0
+GND
+NoConn ~ 4400 6150
+NoConn ~ 4400 6250
+$Comp
+L power:GND #PWR0118
+U 1 1 5F31DC5B
+P 7800 1950
+F 0 "#PWR0118" H 7800 1700 50  0001 C CNN
+F 1 "GND" H 7805 1777 50  0000 C CNN
+F 2 "" H 7800 1950 50  0001 C CNN
+F 3 "" H 7800 1950 50  0001 C CNN
+	1    7800 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 1950 7800 1850
+$EndSCHEMATC

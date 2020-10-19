@@ -1,0 +1,44 @@
+# startTime set channel value
+# startTime fade channel startValue endValue
+# startTime blink channel blinkNumber
+# fade yellow for klaxon
+017 fade 20 0 255
+017 fade 21 0 255
+019 fade 20 255 0
+019 fade 21 255 0
+017 fade 20 0 255
+017 fade 21 0 255
+019 fade 20 255 0
+019 fade 21 255 0
+# second klaxon
+020 fade 20 0 255
+020 fade 21 0 255
+022 fade 20 255 0
+022 fade 21 255 0
+020 fade 20 0 255
+020 fade 21 0 255
+022 fade 20 255 0
+022 fade 21 255 0
+# fade lights behind tv for failure burn
+103 fade 47 0 255
+103 fade 51 0 255
+105 fade 47 255 0
+105 fade 51 255 0
+# turn all lights red for main burn
+154 set 2 255
+154 set 7 255
+154 set 20 255
+154 set 21 128
+154 set 47 255
+154 set 51 255
+154 set 73 255
+154 set 101 255
+190 set 2 0
+190 set 7 0
+190 set 21 0
+190 set 47 0
+190 set 51 0
+190 set 73 0
+190 set 101 0
+# blink lights
+191 blink 20 6
